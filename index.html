@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container_info">
+            <h1>Learn How To Code With SPa ICT Hub</h1>
+            <p class="para">Subscribe, smash the like button, share. Help your friends to see this.</p>
+        </div>
+        <div class="container_form">
+            <p>SPa ICT Hub is adding value to the global economy...</p>
+            <form>
+
+                <div class="form_control">
+                    <label for="firstName">
+                        <input type="text" placeholder="First Name" name="firstName" id="firstName">
+                        <div class="error_circle hide">!</div>
+                    </label>
+                    <p class="error_text hide">First Name cannot be empty</p>
+                </div>
+
+                <div class="form_control">
+                    <label for="lastName">
+                        <input type="text" placeholder="Last Name" name="lastName" id="lastName">
+                        <div class="error_circle hide">!</div>
+                    </label>
+                    <p class="error_text hide">Last Name cannot be empty</p>
+                </div>
+
+                <div class="form_control">
+                    <label for="email">
+                        <input type="email" placeholder="Email" name="email" id="email">
+                        <div class="error_circle hide">!</div>
+                    </label>
+                    <p class="error_text hide">Email cannot be empty</p>
+                </div>
+
+                <div class="form_control">
+                    <label for="password">
+                        <input type="password" placeholder="Password" name="password" id="password">
+                        <div class="error_circle hide">!</div>
+                        <div class="reveal_password">o</div>
+                    </label>
+                    <p class="error_text hide">Password cannot be empty</p>
+                </div>
+
+                <button type="submit" class="submitButton">Join SPa ICT Hub Now</button>
+
+                <p id="policy_agreement">By clicking the button, you are agreeing to our <a href="#">Policy</a>.</p>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="action.js"></script>
+</body>
+</html>
