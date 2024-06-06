@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="brand">SPa</div>
+        <div class="nav">
+            <div class="nav__life">life: <span class="life"></span></div>
+            <div class="nav__score">score: <span class="score"></span></div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Show the prompt component for the usename -->
+        <div class="container__username">
+            <div class="username__input">
+                <label for="username">
+                    <input type="text" placeholder="Username" class="username" id="username">
+                    <div class="user_emoji">👤</div>
+                    <div class="error_icon hide">!</div>
+                </label>
+                <button type="submit" class="startButton"><span>Start</span><div class="start_emoji">🎬</div></button>
+            </div>
+        </div>
+        <!-- ends here -->
+
+        <!-- spinner component -->
+        <div class="spinner__wrapper hide_spinner">
+            Loading... 
+            <div class="spinner spinner__red"></div>
+            <div class="spinner spinner__green"></div>
+            <div class="spinner spinner__blue"></div>
+        </div>
+        <!-- ends here -->
+
+        <!-- Display level selection component -->
+        <div class="container__level hide">
+            <div class="levels">
+                <h1>Levels</h1>
+                <div class="option" data-level="10"><div class="level_emoji_container"><div class="level_emoji">🍳</div>Easy</div> <span class="range">[1, 10]</span></div>
+                <div class="option" data-level="50"><div class="level_emoji_container"><div class="level_emoji">💪</div>Intermediate</div> <span class="range">[1, 50]</span></div>
+                <div class="option" data-level="100"><div class="level_emoji_container"><div class="level_emoji">🧗</div>Hard</div> <span class="range">[1, 100]</span></div>
+                <div class="divider">SPa ICT Hub &copy; '24</div>
+            </div>
+        </div>
+        <!-- ends here -->
+
+        <!-- Display player interface -->
+        <div class="container__player__interface hide">
+            <h1 class="welcome__message">Welcome, <span class="display__username"></span>!</h1>
+            <marquee behavior="" direction="left" class="hint"> 🚨 🚨 🚨 Only integer number is allowed... 🚨 🚨 🚨</marquee>
+            <div class="guess__form">
+                <label for="user_guess">
+                    <input type="text" placeholder="Enter your guess here" id="user_guess" class="user_guess">
+                    <div class="user_emoji">❓</div>
+                    <div class="error_icon_two hide">!</div>
+                </label>
+                <button type="submit" class="submitButton">Submit<div class="start_emoji">👌🏾</div></button>
+            </div>
+        </div>
+        <!-- ends here -->
+
+        <!-- Popup the result component -->
+        <div class="container__result hide">
+            <div class="result_area">
+                <h1 class="result">Result</h1>
+                <div class="group__button">
+                    <div class="confirm__button">Ok</div>
+                    <div class="try__button">Try</div>
+                    <div class="reset__button hide">Reset</div>
+                </div>
+            </div>
+        </div>
+        <!-- ends here -->
+
+    </div>
+
+    <div class="footer">SPa ICT Hub &copy;  2024</div>
+
+    <script src="game.js"></script>
+</body>
+</html>
